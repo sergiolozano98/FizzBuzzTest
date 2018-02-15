@@ -18,17 +18,17 @@ class FizzBuzzGameClass
   {
       /*debemos poner que tambien que no sea divisible por 5 para que en el test no devuelva 2 valores por que si no habra conflicto con divisibles entre 3 y 5*/
       if($number % 3 == 0 && $number % 5 != 0 ){
-        return "Fizz <br>";
+        return "Fizz";
       }
       /*debemos poner que tambien que no sea divisible por 3 para que en el test no devuelva 2 valores por que si no habra conflicto con divisibles entre 3 y 5*/
       else if($number % 5 == 0 && $number % 3 != 0 ){
-        return "Buzz <br>";
+        return "Buzz";
       }
       else if($number % 3 == 0 && $number % 5 ==0){
-        return "FizzBuzz <br>";
+        return "FizzBuzz";
       }
       else {
-        return "$number <br>" ;
+        return "$number" ;
       }
   }
   /*Creamos una funcion para que nos introduzca los valores en un array*/
@@ -40,7 +40,7 @@ class FizzBuzzGameClass
       }
       /*Recorremos el array y se lo pasamos al index.php para que nos muestre la lista final */
        foreach ($lista as $key) {
-        echo $key;
+        echo "$key <br>";
       }
   }
 }
