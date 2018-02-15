@@ -5,13 +5,15 @@
  */
 class FizzBuzzGameClass
 {
-  function __construct()
-  {
-    echo "test";
-    echo "<br>";
-  }
+  /*Variables para la funcion FizzBuzzGameArray*/
   private $init=1;
   private $end=100;
+
+  function __construct()
+  {
+  }
+
+
   /*Creamos los funcion que nos calculara si es divisible entre 5,3 o entre los 2*/
   /*La variable $number sera el numero que comprobamos*/
   public function FizzBuzzGamecalc($number)
@@ -31,6 +33,7 @@ class FizzBuzzGameClass
         return "$number" ;
       }
   }
+
   /*Creamos una funcion para que nos introduzca los valores en un array*/
   public function FizzBuzzGameArray()
   {
@@ -40,10 +43,10 @@ class FizzBuzzGameClass
       }
       /*Recorremos el array y se lo pasamos al index.php para que nos muestre la lista final */
        foreach ($lista as $key) {
-        echo "$key <br>";
+        echo "<tr><td>$key</td></tr>";
       }
+    }
   }
-}
 
 
  ?>
